@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <!-- instructions: -->
+    <!-- I. Leer y mostrar HTML (70pts)
+Escribir un HTML que posea un formulario. 
+El formulario debe leer un número entero positivo.
+Imprimir en ese mismo HTML, en formato de una tarjeta por cada número, 
+la cantidad de números dentro de la serie de fibonacci que correspondan a esa cantidad. Por ejemplo:
+ Si la entrada es 5, deberían aparecer 5 tarjetas separaas conteniendo los números: 
+0 1 1 2 3
+Para las cartas, pueden guiarse con el CSS que aparece en esta URL: https://www.w3schools.com/howto/howto_css_cards.asp.
+Para generar HTML basado en JS, pueden guiarse con esta URL: https://www.w3schools.com/js/js_htmldom_nodes.asp.
+Para documentación general sobre JS, pueden referirse a este enlace: https://github.com/peqadev/javascript-desde-cero
+
+II. Eliminar HTML previamente dibujado en pantalla. (30pts)
+Escribir un script, que cuando se le de click a las tarjetas generas en la parte 1, levante una alerta consultándole al usuario si desea eliminar dicha tarjeta. Si el usuario da click en "sí", se debe eliminar la tarjeta, de caso contrario, solamente cerrar la alerta sin realizar ninguna modificación al HTML. 
+
+Secuencia Fibonacci:
+https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Fibonacci_spiral_34.svg/2880px-Fibonacci_spiral_34.svg.png
+
+Wireframes con dos ejemplos y uno usando el botón de cerrar: (Recordar que un wireframe no es un diseño final y solo debe servir como una guía).
+Formato de entrega: Enlace a la carpeta de github. Recordar que la carpeta de github debe llamarse: `primerapellido-primernombre`, por ejemplo: `agrazal-erick`. 
+
+Cantidad de estudiantes: 1 -->
+    <!-- end instructions -->
+    <form class="form">
+        <label for="number">Ingrese un número: </label>
+        <input type="number" id="number" name="number">
+        <button id="sequenceBtn">Crear Secuencia</button>
+    </form>
+    <div id="output" class="card-container">
+        <div class="card"> 0 </div>
+        <div class="card"> 1 </div>
+        <div class="card"> 1 </div>
+        <div class="card"> 2 </div>
+    </div>
+</body>
+
+</html>
